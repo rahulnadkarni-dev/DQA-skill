@@ -26,12 +26,12 @@ Do NOT begin the audit until you have all of the following. If any are missing, 
 | **Figma link** | "Please share the Figma file URL and, if possible, the specific frame/node link." |
 | **Page route(s) or component path(s)** | "Which page routes or file paths should I audit?" |
 | **Codebase files** | "Please share the relevant source files — paste contents or use your editor's 'Add to chat' feature." |
-| **Design system package names** | "What are the names of your design system packages (e.g. @company/eevee, @company/espeon)?" |
+| **Design system package names** | "What are the names of your design system packages?" |
 
 Optional but useful:
 - Screenshots of the rendered page (desktop + mobile)
 - Known migration status ("we're migrating from X to Y")
-- Names of deprecated libraries to flag (e.g. `styled-components`, `@headout/aer`)
+- Names of deprecated libraries to flag
 
 ---
 
