@@ -26,12 +26,12 @@ Do NOT begin the audit until you have all of the following. If any are missing, 
 | **Figma link** | "Please share the Figma file URL and, if possible, the specific frame/node link." |
 | **Page route(s) or component path(s)** | "Which page routes or file paths should I audit?" |
 | **Codebase files** | "Please share the relevant source files — paste contents or use your editor's 'Add to chat' feature." |
-| **Design system package names** | "What are the names of your design system packages (e.g. @company/eevee, @company/espeon)?" |
+| **Design system package names** | "What are the names of your design system packages (e.g. @acme/ui-core, @acme/tokens)?" |
 
 Optional but useful:
 - Screenshots of the rendered page (desktop + mobile)
 - Known migration status ("we're migrating from X to Y")
-- Names of deprecated libraries to flag (e.g. `styled-components`, `@headout/aer`)
+- Names of deprecated libraries to flag (e.g. `styled-components`, `@acme/legacy-ui`)
 
 ---
 
@@ -257,8 +257,8 @@ Bad because: no file path, no specific value, "appears to" is not audit language
 > **Severity:** Medium
 > **Area:** Page shell / section wrappers
 > **Files:**
-> - `src/containers/desktop/collectionsPage/index.tsx`
-> - `src/containers/common/collectionsPage/components/nearbyCitiesSection/styles.ts`
+> - `src/containers/desktop/productListPage/index.tsx`
+> - `src/containers/common/productListPage/components/filterSection/styles.ts`
 >
 > The page shell and multiple section wrappers define their own width, gap, and height constants
 > instead of shared layout tokens. The Figma frame specifies a max-content-width of 1200px —
@@ -321,7 +321,7 @@ When a finding is code-only due to missing Figma data, say so:
 5. "Not currently true" claims are as important as findings. Explicitly state what the audit
    did NOT find — this prevents false assumptions from spreading.
 
-6. Variant routes (entertainment, promo, etc.) are separate design surfaces. Flag as out-of-scope
+6. Variant routes (campaign, seasonal, etc.) are separate design surfaces. Flag as out-of-scope
    unless explicitly asked.
 
 7. Mobile and desktop are separate audit surfaces. If both containers exist, audit both.
